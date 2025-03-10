@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily prayer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container d-flex justify-content-center">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#section">Section</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <div id="home" class="container">
+        <img src="logo daily prayer.png" alt="Logo" class="logo">
+        <div class="text-content">
+            <p>Membaca kitab suci bukan sekadar kewajiban</p>
+            <p>Melainkan perjalanan spiritual yang membawa kita lebih dekat kepada-Nya</p>
+        </div>
+    </div>
+    
+    <div id="section" class="religion-container">
+        <div class="religion-item"> <button class="religion-button" onclick="window.location.href='islam.html'">
+                <img src="logo islam.png" alt="Islam">
+            </button>
+            <span>ISLAM</span>
+        </div>
+        <div class="religion-item"> <button class="religion-button" onclick="window.location.href='katolik.html'">
+                <img src="lambang salib katolik.png" alt="Katolik">
+            </button>
+            <span>KATHOLIK</span>
+        </div>
+        <div class="religion-item"> <button class="religion-button" onclick="window.location.href='kristen.html'">
+                <img src="lambang salib kristen.png" alt="Kristen">
+            </button>
+            <span>KRISTEN</span>
+        </div>
+    </div>
+
+      <div id="contact" class="contact-form"> 
+        <div id="resultMessage"></div>
+        <h3>Contact Us</h3>
+        <form action="https://formspree.io/f/mbldpwek" method="post">
+            <input type="text" name="Nama" placeholder="Nama" required>
+            <input type="text" name="Email" placeholder="Email" required>
+            <textarea rows="text" name="Messege" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <audio src="${audio}"></audio>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.text-content {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navbar nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*css untuk search bar*/
+.search {
+  --padding: 14px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 28px;
+  justify-content: right;
+  background: #f6f6f6;
+  transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 75);
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #333333;
+  margin-left: 14px;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 200px;
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 25);
+}
+
+/*css untuk section*/
+.logo {
+  width: 200px;
+  height: auto;
+  order: -1;
+}
+
+.religion-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.religion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.religion-button {
+  width: 120px;
+  height: 120px;
+  background-color: #deddda;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.religion-button img {
+  width: 50px;
+  height: auto;
+}
+
+.religion-container span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*css untuk contact*/
+.contact-form {
+  background-color: #270202;
+  color: white;
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+  margin: 40px auto;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffc107;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffc107;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: calc(100% - 12px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  background-color: #ffffff;
+  color: #270202;
+  padding: 5px 10px;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+}
+
+
+.card-surat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+  width: 100%;
+}
+
+.card-surat-list:only-child {
+  display: flex;
+  justify-content: center;
+}
+
+.card-surat-list .card {
+    background-color: #391E1E; 
+    color: white;
+}
+  
+.card-surat {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-results {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin: auto; 
+    float: none; 
+}
+
+.book-btn {
+  background-color: #391E1E;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px; 
+  height: 50px; 
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.close {
+  cursor: pointer;
+  color: #391E1E;
+  float: right;
+  font-size: 20px;
+}
+.chapter-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.chapter-btn:hover {
+  background-color: #666;
+}
+.verse-container {
+  margin-top: 20px;
+}
+/* Modal */
+#chapter-modal, #verse-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px; 
+  max-height: 80vh; 
+  overflow-y: hidden; 
+}
+
+#verse-list {
+  max-height: 60vh;
+  overflow-y: auto; 
+  word-wrap: break-word; 
+}
+
+#verse-list p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.chapter-btn, .verse-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.chapter-btn:hover, .verse-btn:hover {
+  background: #666;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+#verse-list {
+  text-align: justify; 
+}
+
+#verse-list strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
